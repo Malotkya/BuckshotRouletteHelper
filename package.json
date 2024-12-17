@@ -1,0 +1,24 @@
+{
+  "name": "buckshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "npx webpack-cli --env dev",
+    "watch": "npx webpack-cli --watch"
+  },
+  "author": "Alex Malotky",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "file-loader": "^6.2.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.77.1",
+    "sass-loader": "^14.2.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  }
+}
