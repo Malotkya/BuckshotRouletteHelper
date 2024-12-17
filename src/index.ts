@@ -64,7 +64,9 @@ function buildApp():HTMLElement[]{
     lblChance.textContent = (list.chance()*100).toFixed(2)+"%";
 
     return [
-        form,
+        _("div", {id: "formWrapper"},
+            form
+        ),
         _("p", 
             "Live Change: ",
             lblChance
