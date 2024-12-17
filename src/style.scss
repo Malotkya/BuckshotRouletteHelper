@@ -5,6 +5,10 @@ $blank-dark: #023178;
 $blank-light: #2042E9;
 $blank-text: #dbdbf0;
 
+* {
+    box-sizing: border-box;
+}
+
 .live {
     background-color: $live-dark;
     color: $live-text;
@@ -29,9 +33,39 @@ button.blank {
     }
 }
 
-html {
+body {
     font-size: 1rem;
-    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    margin: 0;
+    color: #E4D8C3;
+    background-color:  #0f0d0b;
+}
+
+a:link, a:visited {
+    color: #E4D8C3;
+}
+
+header {
+    background-color: #5F4E35;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer {
+    background-color: #515341;
+    text-align: center;
+    padding: .5rem;
+}
+
+#formWrapper {
+    background-color: #5F4E35;
 }
 
 form {
@@ -39,6 +73,7 @@ form {
     flex-flow: row wrap;
     max-width: 600px;
     margin: 0 auto;
+    padding-bottom: 0.5rem;
 
     .input {
         width: 50%;
@@ -66,6 +101,21 @@ form {
     }
 }
 
+p {
+    background-color: #778390;
+    color: #0f0d0b;
+    padding: .15rem;
+    margin: 0;
+    text-align: center;
+}
+
+shot-list {
+    background-color: #778390;
+    display: flex;
+    flex-grow: 1;
+    gap: .2rem
+}
+
 shot-item {
     display: flex;
     flex-flow: column nowrap;
@@ -86,7 +136,8 @@ shot-item {
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: .1rem
+        padding: .1rem;
+        cursor: default;
     }
 
     button {
@@ -98,7 +149,5 @@ shot-item {
     }
 }
 
-shot-list {
-    display: flex;
-}
+
 
